@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31953D87294D14620029FDAF /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31953D86294D14620029FDAF /* DetailsView.swift */; };
 		31DAB3A9294D0112006361B8 /* FavoriteBookApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DAB3A8294D0112006361B8 /* FavoriteBookApp.swift */; };
 		31DAB3AB294D0112006361B8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DAB3AA294D0112006361B8 /* ContentView.swift */; };
 		31DAB3AD294D0113006361B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31DAB3AC294D0113006361B8 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		31953D86294D14620029FDAF /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 		31DAB3A5294D0112006361B8 /* FavoriteBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FavoriteBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31DAB3A8294D0112006361B8 /* FavoriteBookApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteBookApp.swift; sourceTree = "<group>"; };
 		31DAB3AA294D0112006361B8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 				31DAB3A8294D0112006361B8 /* FavoriteBookApp.swift */,
 				31DAB3AA294D0112006361B8 /* ContentView.swift */,
 				31DAB3B6294D0265006361B8 /* FavoriteModel.swift */,
+				31953D86294D14620029FDAF /* DetailsView.swift */,
 				31DAB3AC294D0113006361B8 /* Assets.xcassets */,
 				31DAB3AE294D0113006361B8 /* Preview Content */,
 			);
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				31DAB3B7294D0265006361B8 /* FavoriteModel.swift in Sources */,
+				31953D87294D14620029FDAF /* DetailsView.swift in Sources */,
 				31DAB3AB294D0112006361B8 /* ContentView.swift in Sources */,
 				31DAB3A9294D0112006361B8 /* FavoriteBookApp.swift in Sources */,
 			);
