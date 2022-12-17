@@ -19,7 +19,6 @@ struct ContentView: View {
                     
                     ForEach(myFavorites) { favorite in
                         Section(header: HStack {
-                         
                             Image(favorite.imageTitle)
                                 .resizable()
                                 .scaledToFit()
