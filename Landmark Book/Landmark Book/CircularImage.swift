@@ -23,6 +23,6 @@ struct CircularImage: View {
 
 struct CircularImage_Previews: PreviewProvider {
     static var previews: some View {
-        CircularImage(choosenImage: "istanbul")
+        CircularImage(choosenImage: "istanbul").previewLayout(.fixed(width: UIScreen.main.bounds.width * 0.5, height: UIScreen.main.bounds.height * 0.3))
     }
 }
