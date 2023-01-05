@@ -15,9 +15,8 @@ struct Offer: View {
     var body: some View {
         ZStack{
             Image("BackgroundPattern")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .scaledToFill()
+                .frame(maxWidth: .infinity, maxHeight: 200 )
+                .clipped()
             VStack{
                 Text(title)
                     .padding()
