@@ -13,6 +13,11 @@
 		318258A229672DDB006BC70C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 318258A129672DDB006BC70C /* Preview Assets.xcassets */; };
 		318258A92967322F006BC70C /* Offer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318258A82967322F006BC70C /* Offer.swift */; };
 		3189CEEC29676BAA008A5A62 /* OffersPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3189CEEB29676BAA008A5A62 /* OffersPage.swift */; };
+		3189CEF1296772FA008A5A62 /* MenuPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3189CEF0296772FA008A5A62 /* MenuPage.swift */; };
+		3189CEF329677304008A5A62 /* InfoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3189CEF229677304008A5A62 /* InfoPage.swift */; };
+		3189CEF52967730F008A5A62 /* OrdersPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3189CEF42967730F008A5A62 /* OrdersPage.swift */; };
+		3189CEF729677540008A5A62 /* ProductItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3189CEF629677540008A5A62 /* ProductItem.swift */; };
+		3189CEF929677906008A5A62 /* DetailsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3189CEF829677906008A5A62 /* DetailsPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +28,11 @@
 		318258A129672DDB006BC70C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		318258A82967322F006BC70C /* Offer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Offer.swift; sourceTree = "<group>"; };
 		3189CEEB29676BAA008A5A62 /* OffersPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersPage.swift; sourceTree = "<group>"; };
+		3189CEF0296772FA008A5A62 /* MenuPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPage.swift; sourceTree = "<group>"; };
+		3189CEF229677304008A5A62 /* InfoPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPage.swift; sourceTree = "<group>"; };
+		3189CEF42967730F008A5A62 /* OrdersPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersPage.swift; sourceTree = "<group>"; };
+		3189CEF629677540008A5A62 /* ProductItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItem.swift; sourceTree = "<group>"; };
+		3189CEF829677906008A5A62 /* DetailsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,10 +65,10 @@
 		3182589929672DDA006BC70C /* CoffeeMasters */ = {
 			isa = PBXGroup;
 			children = (
+				3189CEEF296772E1008A5A62 /* Views */,
+				3189CEED296772C7008A5A62 /* Page Views */,
 				3182589A29672DDA006BC70C /* CoffeeMastersApp.swift */,
 				3182589C29672DDA006BC70C /* ContentView.swift */,
-				318258A82967322F006BC70C /* Offer.swift */,
-				3189CEEB29676BAA008A5A62 /* OffersPage.swift */,
 				3182589E29672DDB006BC70C /* Assets.xcassets */,
 				318258A029672DDB006BC70C /* Preview Content */,
 			);
@@ -71,6 +81,27 @@
 				318258A129672DDB006BC70C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3189CEED296772C7008A5A62 /* Page Views */ = {
+			isa = PBXGroup;
+			children = (
+				3189CEEB29676BAA008A5A62 /* OffersPage.swift */,
+				3189CEF0296772FA008A5A62 /* MenuPage.swift */,
+				3189CEF229677304008A5A62 /* InfoPage.swift */,
+				3189CEF42967730F008A5A62 /* OrdersPage.swift */,
+				3189CEF829677906008A5A62 /* DetailsPage.swift */,
+			);
+			path = "Page Views";
+			sourceTree = "<group>";
+		};
+		3189CEEF296772E1008A5A62 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				318258A82967322F006BC70C /* Offer.swift */,
+				3189CEF629677540008A5A62 /* ProductItem.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,7 +176,12 @@
 			files = (
 				318258A92967322F006BC70C /* Offer.swift in Sources */,
 				3189CEEC29676BAA008A5A62 /* OffersPage.swift in Sources */,
+				3189CEF329677304008A5A62 /* InfoPage.swift in Sources */,
+				3189CEF929677906008A5A62 /* DetailsPage.swift in Sources */,
+				3189CEF1296772FA008A5A62 /* MenuPage.swift in Sources */,
+				3189CEF729677540008A5A62 /* ProductItem.swift in Sources */,
 				3182589D29672DDA006BC70C /* ContentView.swift in Sources */,
+				3189CEF52967730F008A5A62 /* OrdersPage.swift in Sources */,
 				3182589B29672DDA006BC70C /* CoffeeMastersApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
