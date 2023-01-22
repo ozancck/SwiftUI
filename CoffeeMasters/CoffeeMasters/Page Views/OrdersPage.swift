@@ -8,13 +8,11 @@
 import SwiftUI
 
 struct OrdersPage: View {
-    @EnvironmentObject var menuManager: MenuManager
+    @State var name: String = ""
+    @State var phone: String = ""
+
+    // Bring the singleton that was injected in the App
     @EnvironmentObject var cartManager: CartManager
-
-    @AppStorage("name") var name = ""
-    @AppStorage("phone") var phone = ""
-
-    @State var orderConfirmed = false
 
     var body: some View {
         NavigationView {
@@ -24,8 +22,8 @@ struct OrdersPage: View {
             } else {
                 List {
                     Section("ITEMS") {
-                        ForEach(cartManager.cart, id: \.0.id) { _ in
-                            OrderItem()
+                        ForEach(cartManager.cart, id: \.0.id) { item in
+                            OrderItem(item: item)
                         }
                     }.listRowBackground(Color("Background"))
 
@@ -46,8 +44,8 @@ struct OrdersPage: View {
                             Spacer()
                             Text("Total")
                             Spacer()
-//                            Text("$ \(cartManager.total(), specifier: "%.2f")")
-//                                .bold()
+                            Text("$ \(cartManager.total(), specifier: "%.2f")")
+                                .bold()
                             Spacer()
                         }
                     }.listRowBackground(Color.clear)
@@ -57,7 +55,6 @@ struct OrdersPage: View {
                             Spacer()
                             Button("Place Order") {
                                 // TODO: Validation
-                                orderConfirmed = true
                             }
                             .padding()
                             .frame(width: 250.0)

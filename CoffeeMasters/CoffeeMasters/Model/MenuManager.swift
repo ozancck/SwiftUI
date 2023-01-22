@@ -5,23 +5,22 @@
 //  Created by Ozan Çiçek on 6.01.2023.
 //
 
+import Alamofire
 import Foundation
 
 class MenuManager: ObservableObject {
-   @Published var menu : [Category] = [
-    
-    Category(name: "Hot Coffee", products: [
-    
-        Product(id: 0, name: "", description: "", price: 1, image: ""),
-        Product(id: 0, name: "", description: "", price: 1, image: ""),
-        Product(id: 0, name: "", description: "", price: 1, image: ""),
-        Product(id: 0, name: "", description: "", price: 1, image: ""),
-        Product(id: 0, name: "", description: "", price: 1, image: ""),
-        Product(id: 0, name: "", description: "", price: 1, image: ""),
-        Product(id: 0, name: "", description: "", price: 1, image: ""),
-    
-    
-    ])
-    
-    ]
+    @Published var menu: [Category] = []
+
+    init() {
+        refreshItemsFromNetwork()
+    }
+
+    func refreshItemsFromNetwork() {
+        AF.request("https://firtman.github.io/coffeemasters/api/menu.json")
+            .responseDecodable(of: [Category].self) { response in
+                if let menuFromNetwork = response.value {
+                    self.menu = menuFromNetwork
+                }
+            }
+    }
 }

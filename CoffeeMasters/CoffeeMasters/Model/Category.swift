@@ -7,9 +7,10 @@
 
 import Foundation
 
-struct Category {
-    
-    var name : String
-    var products : [Product]
-    
+struct Category: Decodable, Identifiable {
+    var name: String
+    var products: [Product]
+    var id: String {
+        return name
+    }
 }

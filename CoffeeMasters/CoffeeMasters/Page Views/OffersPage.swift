@@ -4,7 +4,6 @@
 //
 //  Created by Ozan Çiçek on 5.01.2023.
 //
-
 import SwiftUI
 
 struct OffersPage: View {
@@ -12,12 +11,8 @@ struct OffersPage: View {
         NavigationView {
             List {
                 Offer(title: "Early Coffee", description: "10% off. Offer valid from 6am to 9am.")
-
                 Offer(title: "Welcome Gift", description: "25% off on your first order.")
-                
-                
-
-            }.navigationTitle("Offer")
+            }.navigationTitle("Offers")
         }
     }
 }
