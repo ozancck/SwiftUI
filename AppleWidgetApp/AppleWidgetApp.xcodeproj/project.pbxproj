@@ -11,6 +11,8 @@
 		3123282D29A6766500A7FFE9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3123282C29A6766500A7FFE9 /* ContentView.swift */; };
 		3123282F29A6766600A7FFE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3123282E29A6766600A7FFE9 /* Assets.xcassets */; };
 		3123283229A6766600A7FFE9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3123283129A6766600A7FFE9 /* Preview Assets.xcassets */; };
+		3123283929A6768F00A7FFE9 /* SuperApple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3123283829A6768F00A7FFE9 /* SuperApple.swift */; };
+		3123283B29A6783500A7FFE9 /* CircularImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3123283A29A6783500A7FFE9 /* CircularImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		3123282C29A6766500A7FFE9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3123282E29A6766600A7FFE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3123283129A6766600A7FFE9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3123283829A6768F00A7FFE9 /* SuperApple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperApple.swift; sourceTree = "<group>"; };
+		3123283A29A6783500A7FFE9 /* CircularImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 				3123282C29A6766500A7FFE9 /* ContentView.swift */,
 				3123282E29A6766600A7FFE9 /* Assets.xcassets */,
 				3123283029A6766600A7FFE9 /* Preview Content */,
+				3123283829A6768F00A7FFE9 /* SuperApple.swift */,
+				3123283A29A6783500A7FFE9 /* CircularImageView.swift */,
 			);
 			path = AppleWidgetApp;
 			sourceTree = "<group>";
@@ -138,7 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3123282D29A6766500A7FFE9 /* ContentView.swift in Sources */,
+				3123283B29A6783500A7FFE9 /* CircularImageView.swift in Sources */,
 				3123282B29A6766500A7FFE9 /* AppleWidgetAppApp.swift in Sources */,
+				3123283929A6768F00A7FFE9 /* SuperApple.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
