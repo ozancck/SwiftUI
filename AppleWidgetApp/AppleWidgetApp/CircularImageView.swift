@@ -8,51 +8,32 @@
 import SwiftUI
 
 struct CircularImageView: View {
-    
-    var image : String
+    var image: String
     var body: some View {
-        
-           
-        
         ZStack {
-            
-            Circle().fill(Color.gray)
-                .frame(width: UIScreen.main.bounds.width * 0.9, height: UIScreen.main.bounds.height * 0.4)
-                .shadow(radius: 25)
-            
-            
+            Circle().fill(Color("lightgray"))
+                .frame(width: UIScreen.main.bounds.width * 0.3, height: UIScreen.main.bounds.height * 0.15)
+                .shadow(radius: 5)
+
             Image(image)
                 .resizable()
                 .scaleEffect(0.7)
                 .aspectRatio(contentMode: .fit)
-               
+
                 .clipShape(Circle())
-               
+
                 .overlay(Circle()
-                    .stroke(Color.black, lineWidth: 5)
+                    .stroke(Color.black, lineWidth: 2)
                 )
-                .shadow(radius: 15)
-                .frame(width: UIScreen.main.bounds.width * 0.9, height: UIScreen.main.bounds.height * 0.4)
-           
-            
+                .shadow(radius: 5)
+                .frame(width: UIScreen.main.bounds.width * 0.3, height: UIScreen.main.bounds.height * 0.15)
         }
-               
-                
-                    
-      
-        
-        
-        
-       
-            
-            
-            
     }
 }
 
 struct CircularImageView_Previews: PreviewProvider {
     static var previews: some View {
         CircularImageView(image: "macbook")
-            .previewLayout(.fixed(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height * 0.5))
+            .previewLayout(.fixed(width: UIScreen.main.bounds.width * 0.35, height: UIScreen.main.bounds.height * 0.16))
     }
 }
