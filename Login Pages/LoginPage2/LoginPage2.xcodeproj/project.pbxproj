@@ -14,6 +14,9 @@
 		31628AB529B3AC8D0015EC95 /* LoginPage2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31628AB429B3AC8D0015EC95 /* LoginPage2Tests.swift */; };
 		31628ABF29B3AC8D0015EC95 /* LoginPage2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31628ABE29B3AC8D0015EC95 /* LoginPage2UITests.swift */; };
 		31628AC129B3AC8D0015EC95 /* LoginPage2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31628AC029B3AC8D0015EC95 /* LoginPage2UITestsLaunchTests.swift */; };
+		31628ACE29B3ACCB0015EC95 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31628ACD29B3ACCB0015EC95 /* LoginView.swift */; };
+		31628AD029B3AD030015EC95 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31628ACF29B3AD030015EC95 /* SignUpView.swift */; };
+		31628AD229B3AD3B0015EC95 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31628AD129B3AD3B0015EC95 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		31628ABA29B3AC8D0015EC95 /* LoginPage2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginPage2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		31628ABE29B3AC8D0015EC95 /* LoginPage2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage2UITests.swift; sourceTree = "<group>"; };
 		31628AC029B3AC8D0015EC95 /* LoginPage2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		31628ACD29B3ACCB0015EC95 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		31628ACF29B3AD030015EC95 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		31628AD129B3AD3B0015EC95 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,9 @@
 			children = (
 				31628AA329B3AC8D0015EC95 /* LoginPage2App.swift */,
 				31628AA529B3AC8D0015EC95 /* ContentView.swift */,
+				31628ACD29B3ACCB0015EC95 /* LoginView.swift */,
+				31628ACF29B3AD030015EC95 /* SignUpView.swift */,
+				31628AD129B3AD3B0015EC95 /* HomeView.swift */,
 				31628AA729B3AC8D0015EC95 /* Assets.xcassets */,
 				31628AA929B3AC8D0015EC95 /* Preview Content */,
 			);
@@ -257,7 +266,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31628AD029B3AD030015EC95 /* SignUpView.swift in Sources */,
+				31628ACE29B3ACCB0015EC95 /* LoginView.swift in Sources */,
 				31628AA629B3AC8D0015EC95 /* ContentView.swift in Sources */,
+				31628AD229B3AD3B0015EC95 /* HomeView.swift in Sources */,
 				31628AA429B3AC8D0015EC95 /* LoginPage2App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,8 +8,27 @@
 import SwiftUI
 
 struct HomeView: View {
+    @State var show = false
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            ZStack {
+                
+                List{
+                    
+                }
+                
+                .navigationDestination(isPresented: self.$show) {
+                    SignUpView(show: self.$show)
+                    Text("")
+                        .hidden()
+                }
+                LoginView(show: self.$show)
+            }
+
+            .navigationTitle("")
+            .toolbar(.hidden)
+            .navigationBarBackButtonHidden(true)
+        }
     }
 }
 
