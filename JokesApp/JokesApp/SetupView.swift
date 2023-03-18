@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SsetupView: View {
+struct SetupView: View {
     @State var setup: String
     var body: some View {
         HStack {
@@ -17,13 +17,14 @@ struct SsetupView: View {
         }
         .padding()
         .background(Color.white)
-        .clipShape(RoundedRectangle(cornerRadius: 30))
+        .clipShape(RoundedRectangle(cornerRadius: 9999999))
         .padding()
     }
 }
 
-struct SsetupView_Previews: PreviewProvider {
+struct SetupView_Previews: PreviewProvider {
     static var previews: some View {
-        SsetupView(setup: "bir gun ozan dsiye biri eve gitmis?")
+        SetupView(setup: "bir gun ozan dsiye biri eve gitmis?").previewLayout(.sizeThatFits)
+            .background(Color.black)
     }
 }

@@ -8,8 +8,48 @@
 import SwiftUI
 
 struct HomeView: View {
+    @StateObject var viewModel = JokesViewModel()
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            ZStack {
+                Rectangle()
+                    .fill(Color.orange)
+                    .ignoresSafeArea()
+
+                VStack {
+                    ForEach(viewModel.joke) { element in
+
+                        SetupView(setup: element.setup)
+                            .padding()
+
+                        VStack {
+                            Button {
+                                viewModel.fetchJokes()
+                            } label: {
+                                Text("New Joke")
+                            }
+                            .padding()
+                            .background(Color.red)
+                            .clipShape(RoundedRectangle(cornerRadius: 44))
+                            .padding()
+                           
+
+                            NavigationLink {
+                                AnswerView(answer: element.punchline)
+                            } label: {
+                                Text("Answer")
+                                    .modifier(ButtonModifier(buttonType: .secondary))
+                            }
+                        }
+                    }
+                }
+            }
+
+        }.onAppear {
+            viewModel.fetchJokes()
+        }
+        .foregroundColor(.black)
     }
 }
 

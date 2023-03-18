@@ -7,14 +7,31 @@
 
 import SwiftUI
 
-struct AnswerViews: View {
+struct AnswerView: View {
+    @State var answer: String
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            Rectangle()
+                .fill(Color.red)
+                .ignoresSafeArea()
+
+            ZStack {
+                Circle()
+                    .fill(Color.white)
+                    .padding()
+
+                Text(answer)
+                    .foregroundColor(.black)
+                    .font(.largeTitle)
+                    .bold()
+            }
+        }
     }
 }
 
-struct AnswerViews_Previews: PreviewProvider {
+struct AnswerView_Previews: PreviewProvider {
     static var previews: some View {
-        AnswerViews()
+        AnswerView(answer: "ozan")
     }
 }

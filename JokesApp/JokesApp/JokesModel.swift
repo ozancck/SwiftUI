@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+struct WelcomeElement: Identifiable ,Decodable {
+    
+    let type: String
+    let setup, punchline: String
+    let id: Int
+}
