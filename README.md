@@ -9,6 +9,11 @@
 <img width="200" alt="splash view" src="https://user-images.githubusercontent.com/77584235/225740389-1281d42b-6927-42a0-a65e-3de168724909.png"><img width="200" alt="list view" src="https://user-images.githubusercontent.com/77584235/225740410-c5a5e2fa-ef0f-4e0b-a12d-736d57c3a89f.png"><img width="200" alt="list view" src="https://user-images.githubusercontent.com/77584235/225740436-076f02c4-2f3c-4663-93b9-8eac2a09586b.png"><img width="200" alt="details page" src="https://user-images.githubusercontent.com/77584235/225740465-485dd600-366b-45fb-92ae-b2364455e190.png">
 
 
+<h3>Deprem Oldu (https://github.com/ozancck/DepremOldu)</h3>
+
+<img width="200" alt="splash view" src="https://user-images.githubusercontent.com/77584235/227539266-9c1dadc2-6006-45bb-9b6a-03aad522efe2.png"><img width="200" alt="main screen" src="https://user-images.githubusercontent.com/77584235/227539296-5ac3b7d3-21b2-4ca8-b107-9bf582539c13.png"><img width="200" alt="other tabitem" src="https://user-images.githubusercontent.com/77584235/227539315-ba1844a5-f1e9-4b91-961b-7fd74cfd4f68.png"><img width="200" alt="details page" src="https://user-images.githubusercontent.com/77584235/227539331-e728b3d4-e84c-4b53-848f-fc276704b540.png">
+
+
 
 <h3>Favorite Book</h3>
 
