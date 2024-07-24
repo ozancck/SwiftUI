@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		313313962C5185DD00B52E2D /* Text+Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313313952C5185DD00B52E2D /* Text+Modifiers.swift */; };
+		313313982C518FCD00B52E2D /* Button+Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313313972C518FCD00B52E2D /* Button+Modifiers.swift */; };
 		3135D7F72C511BBF00A137DE /* WeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3135D7F62C511BBF00A137DE /* WeatherApp.swift */; };
 		3135D7F92C511BBF00A137DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3135D7F82C511BBF00A137DE /* ContentView.swift */; };
 		3135D7FB2C511BC000A137DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3135D7FA2C511BC000A137DE /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		313313952C5185DD00B52E2D /* Text+Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Text+Modifiers.swift"; sourceTree = "<group>"; };
+		313313972C518FCD00B52E2D /* Button+Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button+Modifiers.swift"; sourceTree = "<group>"; };
 		3135D7F32C511BBF00A137DE /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3135D7F62C511BBF00A137DE /* WeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherApp.swift; sourceTree = "<group>"; };
 		3135D7F82C511BBF00A137DE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -38,6 +40,7 @@
 			isa = PBXGroup;
 			children = (
 				313313952C5185DD00B52E2D /* Text+Modifiers.swift */,
+				313313972C518FCD00B52E2D /* Button+Modifiers.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 			files = (
 				3135D7F92C511BBF00A137DE /* ContentView.swift in Sources */,
 				313313962C5185DD00B52E2D /* Text+Modifiers.swift in Sources */,
+				313313982C518FCD00B52E2D /* Button+Modifiers.swift in Sources */,
 				3135D7F72C511BBF00A137DE /* WeatherApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
