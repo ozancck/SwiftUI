@@ -8,10 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    
+    ///bu nedir kardeşim benim açıkla
+    ///state değişkeni değiştiği zaman ilgili tasarım yeniden yüklenir. Sayfa yenilenir
+    @State private var isNight = false
+    
+     
     var body: some View {
         ZStack {
-            BackgroundView(topColor: .blue, bottomColor: .white)
-            
+            BackgroundView(isNight: isNight)
+             
             
             VStack(spacing: 10) {
                 CityTextView(cityName: "Gazayıntab, Ga")
@@ -43,13 +50,13 @@ struct ContentView: View {
                 
                 
                 Button(action: {
-                    
+                    isNight.toggle()
                 }, label: {
-                    Text("Change Day Time")
+                    Text("Change Teheme")
                         .textFontStyle(.H4Medium)
                         
                 })
-                .customButtonStyle(.primary)
+                .customButtonStyle(isNight ? .secondary : .primary)
                 
                 
                 Spacer()
@@ -101,15 +108,17 @@ struct WeatherCell: View {
 
 struct BackgroundView: View {
     
-    var topColor: Color
-    var bottomColor: Color
+   
+    var isNight: Bool
+    
+
     
     var body: some View {
         LinearGradient(gradient: Gradient(
-            colors: [topColor, bottomColor]),
+            colors: [isNight ? .black : .blue, isNight ? .gray :  .white]),
                        startPoint: .top,
                        endPoint: .bottom)
-        .edgesIgnoringSafeArea(.all)
+        .ignoresSafeArea()
     }
 }
 
