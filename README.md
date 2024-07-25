@@ -36,5 +36,11 @@
 
 <img width= "200" alt = "main page joke app" src= "https://user-images.githubusercontent.com/77584235/224458435-8a3b888c-85e3-46cf-9d8e-2c02abb7bb3d.png"><img width= "200" alt = "answer page joke app" src= "https://user-images.githubusercontent.com/77584235/224458439-a692feea-07ae-4691-b1e9-f04678cf3682.png">
 
+<h3>Weather</h3>
+
+<img width= "200" alt = "weather app" src= "https://github.com/user-attachments/assets/697cd768-f5cb-46ed-b586-994d61ba36ba">
+<img width= "200" alt = "weather app" src= "https://github.com/user-attachments/assets/7c84810d-096d-4953-bb9e-74f89ae43087">
+
+
 
 
