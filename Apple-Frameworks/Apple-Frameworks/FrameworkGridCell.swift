@@ -9,23 +9,24 @@ import SwiftUI
 
 struct FrameworkGridCell: View {
     
-    @Binding var imageName: String
-    @Binding var frameworkName: String
+    let framework: Framework
+    
+   
     
     var body: some View {
-        VStack(spacing: 10){
-            Image(imageName)
+        VStack(){
+            Image(framework.imageName)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 100, height: 100)
                 .foregroundStyle(.tint)
             
-            Text(frameworkName)
-                .bold()
+            Text(framework.name)
+                .font(.title2)
+                
         }
+        .padding()
     }
 }
 
-#Preview {
-    FrameworkGridCell(imageName: MockData.frameworks.first?.imageName, frameworkName: MockData.frameworks.first?.name)
-}
+
