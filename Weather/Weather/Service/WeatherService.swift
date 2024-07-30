@@ -9,7 +9,7 @@ import Foundation
 
 class WeatherService {
     private let apiKey = "apikey 0EWoiAIXXDLCgm2FS0sLJj:0yreQJDlY9rV1wDIDBwLQj"
-    private let baseURL = "https://api.collectapi.com/weather/getWeather?data.lang=tr&data.city=ankara"
+    private let baseURL = "https://api.collectapi.com/weather/getWeather?data.lang=tr&data.city=mugla"
     
     func fetchWeather(completion: @escaping (Result<WeatherResponse, Error>) -> Void) {
         guard let url = URL(string: baseURL) else { return }

@@ -8,6 +8,9 @@
 import Foundation
 import SwiftUI
 
+
+
+
 struct RemoteImage: View {
     @StateObject private var loader: ImageLoader
     let placeholder: Image

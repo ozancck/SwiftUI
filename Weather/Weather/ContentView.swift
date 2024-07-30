@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
     @StateObject private var viewModel = ContentViewModel()
     /// bu nedir kardeşim benim açıkla
@@ -15,7 +16,8 @@ struct ContentView: View {
 
     var body: some View {
         ZStack {
-            BackgroundView(isNight: isNight)
+            
+           BackgroundView(isNight: isNight)
 
             VStack(spacing: 10) {
                 
@@ -43,11 +45,18 @@ struct ContentView: View {
                 ExtractedView(weatherData: viewModel.weather)
 
                 Spacer()
+                
+                if viewModel.isLoading {
+                    ProgressView()
+                        .progressViewStyle(CircularProgressViewStyle())
+                        .scaleEffect(2)
+                }
             }
         }
         .onAppear {
             viewModel.getWeather()
             print("weather: \(viewModel.weather)")
+            
         }
     }
 }
@@ -74,6 +83,7 @@ struct WeatherCell: View {
         }
     }
 }
+
 
 struct BackgroundView: View {
     var isNight: Bool
