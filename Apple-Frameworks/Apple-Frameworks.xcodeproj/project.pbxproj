@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		315110152C8770300012048A /* FrameworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315110142C8770300012048A /* FrameworkDetailView.swift */; };
+		315110172C8771350012048A /* AFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315110162C8771350012048A /* AFButton.swift */; };
+		315110192C8776220012048A /* FrameworkGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315110182C8776220012048A /* FrameworkGridViewModel.swift */; };
 		31BF9CB82C58EBD8004B19D0 /* Apple_FrameworksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BF9CB72C58EBD8004B19D0 /* Apple_FrameworksApp.swift */; };
 		31BF9CBC2C58EBD9004B19D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31BF9CBB2C58EBD9004B19D0 /* Assets.xcassets */; };
 		31BF9CBF2C58EBD9004B19D0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31BF9CBE2C58EBD9004B19D0 /* Preview Assets.xcassets */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		315110142C8770300012048A /* FrameworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailView.swift; sourceTree = "<group>"; };
+		315110162C8771350012048A /* AFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFButton.swift; sourceTree = "<group>"; };
+		315110182C8776220012048A /* FrameworkGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridViewModel.swift; sourceTree = "<group>"; };
 		31BF9CB42C58EBD8004B19D0 /* Apple-Frameworks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Apple-Frameworks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		31BF9CB72C58EBD8004B19D0 /* Apple_FrameworksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apple_FrameworksApp.swift; sourceTree = "<group>"; };
 		31BF9CBB2C58EBD9004B19D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -61,6 +67,9 @@
 				31BF9CB72C58EBD8004B19D0 /* Apple_FrameworksApp.swift */,
 				31BF9CBB2C58EBD9004B19D0 /* Assets.xcassets */,
 				31BF9CBD2C58EBD9004B19D0 /* Preview Content */,
+				315110142C8770300012048A /* FrameworkDetailView.swift */,
+				315110162C8771350012048A /* AFButton.swift */,
+				315110182C8776220012048A /* FrameworkGridViewModel.swift */,
 			);
 			path = "Apple-Frameworks";
 			sourceTree = "<group>";
@@ -144,8 +153,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				31BF9CC82C58ECAF004B19D0 /* FrameworkGridView.swift in Sources */,
+				315110152C8770300012048A /* FrameworkDetailView.swift in Sources */,
 				31BF9CC62C58EBEC004B19D0 /* Framework.swift in Sources */,
 				31BF9CCA2C58ECCA004B19D0 /* FrameworkGridCell.swift in Sources */,
+				315110172C8771350012048A /* AFButton.swift in Sources */,
+				315110192C8776220012048A /* FrameworkGridViewModel.swift in Sources */,
 				31BF9CB82C58EBD8004B19D0 /* Apple_FrameworksApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
